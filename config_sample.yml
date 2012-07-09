@@ -1,0 +1,17 @@
+development:
+  adapter: sqlite3
+  database: development
+  username: devsonthegreen
+  password:
+
+test:
+  adapter: sqlite3
+  database: test
+  username: devsonthegreen
+  password:
+
+production:
+  adapter: postgresql
+  database: devsonthegreen_production
+  username:
+  password:

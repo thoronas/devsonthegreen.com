@@ -1,0 +1,13 @@
+.bundle
+*.sqlite3
+log/*.log
+tmp/
+.sass-cache/
+coverage/
+workfiles/
+.mysql_password
+config.yml
+:memory
+.yardoc/
+doc/
+.vimrc
