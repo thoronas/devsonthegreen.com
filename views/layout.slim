@@ -1,13 +1,22 @@
 doctype html
 html
   head
-    title Slim Core Example
+    title DevsOnTheGreen by #SaturHack
     meta name='keywords' content='developers golf green awesome fun times'
+    link href='/css/bootstrap.min.css' type='text/css' media='screen' rel='stylesheet'
+    link href='/css/bootstrap-responsive.min.css' type='text/css' media='screen' rel='stylesheet'
+    link href='/assets/application.css' type='text/css' media='screen' rel='stylesheet'
+
+    script src='bootstrap.min' type='text/javascript'
 
   body
-    h1 Devs On The Green
+    h1
+      span.devs Devs
+      span.on On
+      span.the-green The Green
 
-    div id='content' class='example1'
+    div class='container'
+
       p Some content
 
       == yield
