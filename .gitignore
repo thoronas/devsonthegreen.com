@@ -6,7 +6,7 @@ tmp/
 coverage/
 workfiles/
 .mysql_password
-config.yml
+database.yml
 :memory
 .yardoc/
 doc/
