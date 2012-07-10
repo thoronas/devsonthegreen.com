@@ -1,4 +1,4 @@
-group :default do
+group :spec do
   guard 'minitest', :cli => "--seed 123456" do
     watch(%r|^spec/(.*)_spec\.rb|)
     watch(%r{^lib/(.*/)?([^/]+)\.rb$})  { |m| "spec/#{m[1]}#{m[2]}_spec.rb" }
@@ -16,8 +16,9 @@ group :sprockets do
     watch(%r{^assets/.+$})
     watch('devsonthegreen.rb')
   end
+
+  guard 'uglify', :input => 'public/assets/application.js', :destination_file => 'public/assets/application.js' do
+    watch('public/assets/application.js')
+  end
 end
 
-guard 'uglify', :input => 'public/assets/application.js', :destination_file => 'public/assets/application.js' do
-  watch('public/assets/application.js')
-end

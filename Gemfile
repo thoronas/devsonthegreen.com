@@ -21,7 +21,7 @@ gem 'slim'
 group :assets do
   gem 'coffee-script', '~>2.2.0'
   gem 'uglifier', '~>1.0.3'
-  gem 'sass', '~>3.1.10'
+  gem 'less'
   gem 'sprockets', '2.4.4'
   gem 'therubyracer'
 end
