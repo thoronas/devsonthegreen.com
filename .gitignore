@@ -11,4 +11,4 @@ database.yml
 .yardoc/
 doc/
 .vimrc
-public/assets/*
+public/assets/
