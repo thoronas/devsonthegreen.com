@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Slim Core Example
+    meta name='keywords' content='developers golf green awesome fun times'
+
+  body
+    h1 Devs On The Green
+
+    div id='content' class='example1'
+      p Some content
+
+      == yield
+
+      p
+        | No items found.  Please add some inventory.
+          Thank you!
+
+    div id='footer'
+      | Copyright © 2012 Brian Pearce
