@@ -8,11 +8,13 @@ module DevsOnTheGreen
     config_file './config.yml'
 
     configure settings.environment.to_sym do
+      db = YAML.load(File.new(settings.root + '/config.yml'))[settings.environment.to_s]
+
       if development?
-        register Sinatra::Reloader if development?
-        DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/#{settings.environment.to_s}.sqlite3")
+        register Sinatra::Reloader
+        DataMapper.setup(:default, db)
       elsif production?
-        DataMapper.setup(:default, "postgresql://")
+        DataMapper.setup(:default, db)
       else
         DataMapper.setup(:default, 'sqlite3::memory')
       end

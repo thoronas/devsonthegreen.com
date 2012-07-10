@@ -10,6 +10,7 @@ gem 'data_mapper'
 gem 'randexp'
 gem 'unicorn'
 gem 'slim'
+gem 'pry'
 
 group :development do
   gem 'capistrano'
@@ -20,7 +21,6 @@ group :development do
 end
 
 group :development, :test do
-  gem 'pry'
   gem 'debugger'
 end
 
