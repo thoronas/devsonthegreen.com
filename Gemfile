@@ -29,14 +29,13 @@ end
 group :development do
   gem 'capistrano'
   gem 'capistrano-ext'
-  gem 'capistrano-unicorn', :git => 'git://github.com/brianp/capistrano-unicorn.git'
+  gem 'capistrano-unicorn'
   gem 'yard'
   gem 'thin'
 end
 
 group :development, :test do
   gem 'pry'
-  gem 'debugger'
   gem 'guard'
   gem 'guard-sprockets2'
   gem 'guard-minitest'
