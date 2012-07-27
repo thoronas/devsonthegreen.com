@@ -12,3 +12,4 @@ database.yml
 doc/
 .vimrc
 public/assets/
+config/deploy.rb
