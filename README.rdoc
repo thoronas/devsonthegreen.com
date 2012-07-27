@@ -1,0 +1,38 @@
+Devs On the Green
+by the gentleman who bring you {#SaturHack}[http://www.saturhack.com]
+
+This is the Sinatra web app to run
+{DevsOnTheGreen.com}[http://www.devsonthegreen.com]
+
+To run this project locally your must know / do the following things:
+
+== Requirements
+* Ruby 1.9.3
+
+== Installation Steps
+
+=== 1. Clone the repository to your local computer.
+
+  git clone git://github.com/brianp/devsonthegreen.com.git
+
+=== 2. Install all gem dependencies
+
+  bundle install
+
+=== 3. Make a database.yml file
+
+Copy the database_sample.yml and fill it out accordingly
+
+=== 4. Run Guard to create the assets locally
+
+  bundle exec guard
+
+Now make any change to <tt>assets/javascripts</tt> or
+<tt>assets/stylesheets</tt> to generate the assets.
+
+=== 5. Start the application
+
+  bundle exec rackup
+
+The application should now be running on the default port 9292. Browse to
+http://localhost.com:9292 to view the app.
