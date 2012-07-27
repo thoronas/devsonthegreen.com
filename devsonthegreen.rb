@@ -11,8 +11,7 @@ module DevsOnTheGreen
   Dir['./models/**/*.rb'].each {|f| require f }
 
   class Application < Sinatra::Base
-    Bundler.require(settings.environment)
-    Bundler.require(:assets)
+    Bundler.require(:default, settings.environment, :assets)
 
     set :root, File.expand_path('../', __FILE__)
     set :sprockets, Sprockets::Environment.new(root)
