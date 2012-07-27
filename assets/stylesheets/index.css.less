@@ -16,7 +16,7 @@ html, body {
   height: 100%;
 }
 
-.container {
+body > .container {
   position: absolute;
   top: 0;
   left: 0;
@@ -32,7 +32,7 @@ html, body {
   width: 1000px;
   height: 1000px;
   margin: 40px auto 0 20px;
-  background: rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.8);
   max-width: 700px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -45,7 +45,7 @@ html, body {
 h1 {
   position: absolute;
   top: 28px;
-  right: 200px;
+  right: 30px;
   width: 600px;
   font-size: 6em;
   font-family: 'Radley', serif;
@@ -72,13 +72,36 @@ h1 {
 .menu {
   z-index: 100;
   position: relative;
+  margin-bottom: 18px;
+  margin-left: 0;
+  list-style: none;
+}
+
+.menu li {
+  float: left;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: 2px;
+  line-height: 14px;
 }
 
 .what {
+  position: relative;
+  background: url(/images/green2.png) no-repeat 5% 90%;
+}
+
+.who {
   position: absolute;
   top: 800px;
   left: 1000px;
-  background: url(/images/green1.png) no-repeat center bottom;
-  width: 944px;
-  height: 600px;
+  background: url(/images/green1.png) no-repeat center 80%;
+}
+
+.content {
+  position: relative;
+  top: 90px;
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.8);
 }
