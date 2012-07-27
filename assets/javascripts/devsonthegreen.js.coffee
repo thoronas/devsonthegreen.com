@@ -7,3 +7,4 @@ $ ->
 
   $('.container .view').css 'width', $('html').css('width')
   $('.container .view').css 'height', $('html').css('height')
+
