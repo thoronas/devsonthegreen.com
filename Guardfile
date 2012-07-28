@@ -12,7 +12,7 @@ group :sprockets do
   Bundler.require
   require './devsonthegreen'
 
-  guard 'sprockets2', :sprockets => DevsOnTheGreen::Application.sprockets, :digest => true do
+  guard 'sprockets2', :sprockets => DevsOnTheGreen::Application.sprockets, :digest => false do
     watch(%r{^assets/.+$})
     watch('devsonthegreen.rb')
   end
