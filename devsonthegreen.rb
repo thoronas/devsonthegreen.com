@@ -2,7 +2,7 @@ require 'bundler/setup'
 
 module AssetHelpers
   def asset_path(source)
-    '/assets/' + settings.sprockets.find_asset(source)
+    '/assets/' + settings.sprockets.find_asset(source).logical_path
   end
 end
 
